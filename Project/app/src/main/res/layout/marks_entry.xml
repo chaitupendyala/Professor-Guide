@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/roll_name"
+        android:layout_marginLeft="10dp"
+        android:text="name and roll here"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/marks"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="200dp"
+        android:layout_below="@+id/roll_name"
+        android:hint="Marks here!!!"/>
+</RelativeLayout>

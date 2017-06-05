@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chaitanya.project.Login_Page"
+    android:background="@android:color/black"
+    android:focusableInTouchMode="true">
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/background"
+        android:id="@+id/Logo"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="5dp"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="198dp"
+        android:id="@+id/textInputLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textInputLayout2">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:focusable="true"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="128dp"
+        android:id="@+id/textInputLayout2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp">
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:hint="User Name"
+            android:inputType="text"
+            android:layout_marginTop="103dp"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignStart="@+id/textInputLayout2" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AMRITA"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="39dp"
+        android:textSize="65dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="111dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagelogin"
+        android:src="@drawable/animation"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

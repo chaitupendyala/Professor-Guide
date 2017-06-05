@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chaitanya.project.user"
+    android:background="@android:color/black">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textAlignment="gravity"
+        android:id="@+id/name"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@+id/logout"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/logout"
+        android:text="Logout"
+        android:textAlignment="center"
+        android:background="@android:color/transparent"
+        android:textSize="15dp"
+        android:layout_marginTop="23dp"
+        android:textStyle="italic"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="20dp"
+        android:id="@+id/scrollView2">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/attendance"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/buttonbrown"
+                android:elevation="40dp"
+                android:text="Mark Attendance"
+                android:textSize="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="16dp" />
+
+            <Button
+                android:id="@+id/marks"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/buttongreen"
+                android:elevation="40dp"
+                android:text="Marks \nEntry"
+                android:textColorLink="@color/colorAccent"
+                android:textSize="20dp"
+                android:layout_alignBaseline="@+id/attendance"
+                android:layout_alignBottom="@+id/attendance"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="14dp"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/report"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/buttonred"
+                android:elevation="40dp"
+                android:text="Marks\nReport"
+                android:textColorLink="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_below="@+id/attendance"
+                android:layout_alignLeft="@+id/attendance"
+                android:layout_alignStart="@+id/attendance" />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/buttonbrown"
+                android:id="@+id/list"
+                android:textSize="20dp"
+                android:text="Students\nList"
+                android:layout_alignBaseline="@+id/report"
+                android:layout_alignBottom="@+id/report"
+                android:layout_alignLeft="@+id/marks"
+                android:layout_alignStart="@+id/marks" />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@drawable/buttongreen"
+                android:text="Attendance \nReport"
+                android:textSize="20dp"
+                android:id="@+id/attendance_report"
+                android:layout_marginTop="38dp"
+                android:layout_below="@+id/report"
+                android:layout_alignLeft="@+id/report"
+                android:layout_alignStart="@+id/report" />
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:text="File\nUpload"
+                android:textSize="20dp"
+                android:background="@drawable/buttonyellow"
+                android:id="@+id/file_upload"
+                android:layout_alignBaseline="@+id/attendance_report"
+                android:layout_alignBottom="@+id/attendance_report"
+                android:layout_alignLeft="@+id/list"
+                android:layout_alignStart="@+id/list"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
