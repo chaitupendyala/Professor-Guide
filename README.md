@@ -29,10 +29,10 @@ How to run
 		
 		1. Install Django on the local system
 		2. Migrate
-			> ### python3 manage.py makemigrations Validate
-			> ### python3 manage.py migrate
+			> python3 manage.py makemigrations Validate
+			> python3 manage.py migrate
 		3. Run the server
-			> ### python3 manage.py runserver <<SYSTEM-IP>>:<<PORT-NO>>
+			> python3 manage.py runserver <<SYSTEM-IP>>:<<PORT-NO>>
 	
 	Project
 	-------
