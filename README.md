@@ -1,11 +1,11 @@
 This is a project acts as an aid for professors in a college
 ============================================================
 
-There are mainly two parts of the project:
-------------------------------------------
+There are mainly two parts of the project
+-----------------------------------------
 
-1. [AUPMS] - which is the android project
-2. [Project] - which is a django server which takes care of the backend
+1. AUPMS - which is the android project
+2. Project - which is a django server which takes care of the backend
 
 
 Project
@@ -29,16 +29,10 @@ How to run
 		
 		1. Install Django on the local system
 		2. Migrate
-			'''sh 
-				python3 manage.py makemigrations Validate 
-			  '''
-			'''sh 
-				python3 manage.py migrate
-			'''
+			> ### python3 manage.py makemigrations Validate
+			> ### python3 manage.py migrate
 		3. Run the server
-			'''sh 
-				python3 manage.py runserver <<SYSTEM-IP>>:<<PORT-NO>> 
-			  '''
+			> ### python3 manage.py runserver <<SYSTEM-IP>>:<<PORT-NO>>
 	
 	Project
 	-------
