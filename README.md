@@ -4,8 +4,8 @@ This is a project acts as an aid for professors in a University
 There are mainly two parts of the project
 -----------------------------------------
 
-1. AUPMS - the android project
-2. Project - a django server which takes care of the back-end
+1. Project - the android project
+2. AUPMS - a django server which takes care of the back-end
 
 
 Project
